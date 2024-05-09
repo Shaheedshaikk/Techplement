@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="in2.css"> 
+</head>
+<body>
+    <div class="back-btn">
+        <button><a href="index.html">Back</a></button>
+    </div>
+    <div class="search-container">
+        <h1>Search By Zip Code or City Name...</h1>
+        <input type="text" id="location-input1" placeholder="Enter location....">
+        <button id="butn1"><i class="fa fa-search"></i></button> 
+    </div>
+    <div class="weather-data" id="data">
+        <img id="img" src="./cloudy.png" alt="cloud">
+        <div class="temp"><span id="temp-value1">25</span><span id="unit">&#176</span><span id="c">C</span></div>
+        <div id="wea-desc1">Cloudy</div>
+        <div id="location1">Hyderabad</div>
+    </div>
+    <div class="warning">Enter Only Zip Code to get weather. If you don't have a zip code, search by city name.</div>
+
+    <div class="multi-weather">
+        <div class="weather-item">
+            <p>💧</p>
+            <div>Humidity : <span id="humi"></span></div>
+            <div>Pressure : <span id="pre"></span></div>
+        </div>
+
+        <div class="weather-item">
+            <p>🌡</p>
+            <div>Min-temp : <span id="mint"></span>&#176c</div>
+            <div>Max-temp : <span id="maxt"></span>&#176c</div>
+        </div>
+
+        <div class="weather-item">
+            <p>♒</p>
+            <div>Wind-speed : <span id="ws"></span></div>
+        </div>
+    </div>
+
+    <script src="wea.js"></script>
+</body>
+</html>

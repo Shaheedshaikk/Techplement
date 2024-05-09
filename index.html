@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="weather.css">
+    
+
+</head>
+<body>
+   
+    <header class="head">
+        <div class="dropdown">
+        <button class="dbtn"><i class="fa fa-bars"></i></button>
+        <div class="dropdown-content">
+            <a href="index3.html">Search By City ID</a>
+            <a href="index2.html">Search By Zip Code</a>
+            
+        </div>
+        </div>
+        
+
+        <div class="serachBar">
+            <h1 style="margin-top: 0%; margin-bottom: 5px; color: greenyellow;">Search here...</h1>
+            <input style="font-size: large; padding: 10px; border-radius: 10px; border: none; " type="text" id="location-input" placeholder="Enter location....">
+            <button  id="butn" style="border: none; border-radius: 10px;" ><i class="fa fa-search"></i></button> 
+        </div>
+
+        <div class="emoji">
+            <p>☀️</p>
+            <p>🌑</p>
+            <p>☁️</p>
+        </div>
+    </header>
+
+    <div class="update">
+    <div>
+        <p style="font-size: 30px; margin-bottom: 0; font-weight: bold;">Weather Report</p>
+    </div>
+    
+
+   
+    <img class="image" id="img" src="./cloudy.png" alt="cloud">
+    <div class="temp"><span id="temp-value">25</span><span id="unit">&#176</span><span id="c">C</span></div>
+    <div id="wea-desc">Cloudy</div>
+    <div id="location">Hyderabad</div>
+    </div>
+
+    <div class="multi-wea">
+    <div style="text-align: center;  background-color:  rgb(237, 237, 218,0.7); padding: 10px 30px; border-radius: 30px;">
+        <p style="font-size: 30px; margin-top: 0;">💧</p>
+        <div style="display: flex;"><p>Humidity : <div id="humi" style="margin-top: 17px; margin-left: 10px;"></div></p></div>
+        <div style="display: flex;"><p>Pressure : <div id="pre" style="margin-top: 17px; margin-left: 10px;"></div></p></div>
+        
+    </div>
+
+    <div style="text-align: center;  background-color: rgb(237, 237, 218,0.7); padding: 10px 30px; border-radius: 30px;">
+        <p style="font-size: 30px; margin-top: 0;">🌡️</p>
+        <div style="display: flex;"><p>Min-temp : <div id="mint" style="margin-top: 17px; margin-left: 10px;"></div> <p style="margin-top: 17px;">&#176c</p></p></div>
+        <div style="display: flex;"><p>Max-temp : <div id="maxt" style="margin-top: 17px; margin-left: 10px;"></div> <p style="margin-top: 17px;">&#176c</p></p></div>
+
+    </div>
+
+    <div style="text-align: center;  background-color: rgb(237, 237, 218,0.7); padding: 10px 30px; border-radius: 30px;">
+        <p style="font-size: 30px; margin-top: 0;">♒</p>
+        <div style="display: flex;"><p>Wind-speed : <div id="ws" style="margin-top: 17px; margin-left: 10px;"></div></p></div>
+        
+    </div>
+    </div>
+
+    <script src="weather.js"></script>
+    
+</body>
+</html>
