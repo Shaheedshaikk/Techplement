@@ -7,8 +7,11 @@ body {
 
 
 .back-btn {
-    text-align: center;
-    margin: 50px auto;
+    margin-left: 40px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    margin-right: auto;
+   
     
 }
 
@@ -21,10 +24,13 @@ body {
 .search-container {
     text-align: center;
     background-color: aquamarine;
-    margin: 50px auto;
+    
     padding: 10px 0px;
     box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
     margin-bottom: 0;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 5px;
 }
 
 .weather-data {
@@ -34,6 +40,9 @@ body {
     display: none;
     background-color: aquamarine;
     margin-top: 0;
+    margin-left: 40px;
+    margin-right: 40px;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
 }
 
 .warning {
@@ -62,4 +71,21 @@ body {
 .weather-item p {
     font-size: 30px;
     margin-top: 0;
+}
+
+#location-input1{
+    font-size: large;
+     padding: 10px; 
+     border-radius: 10px; 
+     border: none;
+
+}
+
+#butn1{
+
+    border: none;
+    border-radius: 10px;
+    font-size: larger;
+    color: white;
+    background-color: blue;
 }
